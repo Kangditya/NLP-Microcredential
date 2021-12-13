@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Sentiment Analysis Website Demo</title>
+  <!-- Loading in TensorFlow.js -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+
+  <link href="styles/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+</head>
+
+<body onload="myFunction()">
+  <div class="demo">
+    <h1>Thank you for your visit!</h1>
+    <h2>Check the news sentiment from the title in mass media about Indonesia's government in here</h2>
+    <br>
+    <div id="loaderlabel">
+      <h2>Loading Model...</h2>
+    </div>
+
+    <div id="loader"> </div>
+    <div style="display:none;" id="mainAPP">
+      <label for="input">Input News Title</label><br><br>
+      <h3 id="attention">You have to translate the text to english manually before fill this form</h3>
+      <input placeholder="Try: 'Anies must be the hands of optimal flood hooks'" id="input">
+      <button class="button" style="vertical-align:middle"><span>Get Result </span></button>
+      <p></p>
+    </div>
+  </div>
+  <script src="predict.js"></script>
+</body>
+
+
+<div class="wrapper">
+  <h1>Our Team</h1>
+  <div class="our_team">
+    <div class="team_member">
+      <div class="member_img">
+        <img src="member_1.png" alt="our_team">
+      </div>
+      <h3>Aditya Nur'ahya</h3>
+      <!-- <span>IOT Engineer</span> -->
+    </div>
+    <div class="team_member">
+      <div class="member_img">
+        <img src="member_2.png" alt="our_team">
+      </div>
+      <h3>Andrian Kharisma W</h3>
+      <!-- <span>Web Developer</span> -->
+    </div>
+    <div class="team_member">
+      <div class="member_img">
+        <img src="member_3.png" alt="our_team">
+      </div>
+      <h3>Reisa Siva</h3>
+      <!-- <span>C++ Engineer</span> -->
+    </div>
+    <div class="team_member">
+      <div class="member_img">
+        <img src="member_4.png" alt="our_team">
+      </div>
+      <h3>Waldemar Naposo</h3>
+      <!-- <span>C++ Engineer</span> -->
+    </div>
+  </div>
+</div>
+
+</html>
